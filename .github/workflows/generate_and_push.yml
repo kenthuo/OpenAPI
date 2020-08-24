@@ -47,7 +47,7 @@ jobs:
       - name: Download the default branch of remote repository
         uses: actions/checkout@v2
         with:
-          repository: jasontsaitks/javascript-sdk
+          repository: kenthuo/javascript-sdk
           path: current_code
 
       - name: Download the artifact to the correct path
