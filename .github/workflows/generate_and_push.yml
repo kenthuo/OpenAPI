@@ -24,7 +24,7 @@ jobs:
       - name: generate code
         run: |
           mkdir new_javascript
-          java -jar ./bin/utils/openapi-generator-cli.jar generate -i developer.yaml -g javascript -o new_javascript
+          java -jar ./bin/utils/openapi-generator-cli.jar generate -i developer.yaml -g javascript -t ./template/javascript -o new_javascript
 
       - name: version check
         run: |
